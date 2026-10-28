@@ -11,10 +11,10 @@ builder.Services.AddDbContext<SchoolContext>(options =>
 var app = builder.Build();
 
 // Absolute proxy for code-server
-if (app.Environment.IsDevelopment()){
-    app.UsePathBase("/absproxy/5000");
-}
-    
+// if (app.Environment.IsDevelopment()){
+//     app.UsePathBase("/absproxy/5000");
+// }
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
